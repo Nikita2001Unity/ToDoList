@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    /* background: mediumpurple; */
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(img/kelly-sikkema-dgVSuJu58C0-unsplash.jpg) fixed no-repeat;
+    background-size: cover;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 30px 0;
+    font-family: 'Bebas Neue';
+}
+
+.todo-programname{
+color: wheat;
+text-align: center;
+user-select: none;
+}
+.todo{
+    text-align: center;
+}
+
+.todo-panel{
+    width: 500px;
+    display: flex;
+    background: transparent;
+    border:  1px solid wheat;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.todo-panel__input-field input{
+margin: 20px 0 20px 20px;
+border-radius: 10px;
+outline-style: none;
+border: none;
+padding: 10px;
+width: 250px;
+background: transparent;
+border:  1px solid white;
+color: wheat;
+}
+
+.todo-panel__search-btn button{
+    width: 80px;
+    margin: 20px 20px 20px 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    border:  1px solid white;
+    color: white;
+    outline-style: none;
+}
+.todo-panel__search-btn button:hover{
+background: rgb(78, 202, 78);
+font-weight: 700;
+transition: all 0.3s;
+}
+.todo-panel__search-btn button:active{
+    color: rosybrown;
+}
+
+.todo-daytasks{
+user-select: none;
+color: wheat;
+}
+
+.todo-task{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.todo-task p::before{
+    content: "-";
+}
+
+.todo-task .btns{
+    /* margin-left: 200px; */
+    min-width: 480;
+    max-width: 450px;
+}
+
+.todo-task .btns .btn-delete{
+    position: absolute;
+    right: 400px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    border:  1px solid white;
+    color: white;
+    outline-style: none;
+    margin-top: 13px;
+}
+
+.todo-task .btns .btn-complete{
+    position: absolute;
+    right: 450px;
+    margin-top: 16px;
+}
+
+.todo-task .btns .btn-delete:hover{
+background: rgb(255, 4, 29);
+transition: all 0.3s;
+}
+
+.todo-all-tasks .checked{
+    background: grey;
+    width: 500px;
+    border-radius: 30px;
+    padding-left: 5px
+}
+.todo-task{
+    border-radius: 30px;
+    width: 500px;
+    padding-left: 5px
+}
+
+.todo-task .checked .btn-complete{
+    background:rgb(77, 197, 37);;
+}
+.btn-complete{
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    border:  1px solid white;
+    color: white;
+    outline-style: none;
+}
+.todo-task .btns .btn-complete .checked{
+    color: red;
+}
+
+.todo-task .btns .btn-complete:hover{
+    background: rgb(77, 197, 37);
+    transition: all 0.3s;
+    }
+
